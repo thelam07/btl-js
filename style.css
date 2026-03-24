@@ -1,0 +1,200 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
+
+body {
+    font-family: 'Inter', sans-serif; 
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    color: #333;
+}
+
+.khung-chua {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+.thanh-tieu-de {
+    padding: 10px 0;
+    background: #fff;
+    border-bottom: 1px solid #eee;
+
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.thanh-tieu-de .khung-chua {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo a {
+    font-size: 24px;
+    font-weight: 800;
+    text-decoration: none;
+    color: #333;
+}
+
+.logo span {
+    color: #2af598;
+}
+
+.danh-sach-menu ul {
+    display: flex;
+    list-style: none;
+    gap: 35px;
+}
+
+.danh-sach-menu a {
+    text-decoration: none;
+    color: #555;
+    font-weight: 500;
+    transition: 0.3s;
+}
+
+.danh-sach-menu a:hover {
+    color: #2af598;
+}
+
+.vung-gioi-thieu {
+    padding: 0px 0 00px 0;
+    background-color: #fcfcfc;
+}
+
+.khung-bao-gioi-thieu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.noi-dung-chu {
+    flex: 1; 
+    padding-right: 50px;
+}
+
+.tieu-de-phu {
+    color: #2af598;
+    font-size: 14px;
+    font-weight: 700;
+    margin-bottom: 20px;
+    display: block;
+}
+
+.tieu-de-phu {
+    font-family: 'Inter', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+.noi-dung-chu h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 52px;
+    font-weight: 900;
+    line-height: 1.1;
+    letter-spacing: -1.5px;
+    margin-bottom: 25px;
+    color: #1a1a1a;
+    -webkit-font-smoothing: antialiased;
+}
+
+.noi-dung-chu h1 span {
+    color: #2af598;
+}
+
+.noi-dung-chu p {
+    font-size: 18px;
+    color: #777;
+    margin-bottom: 40px;
+}
+
+.nut-bam-chinh {
+    display: inline-block;
+    padding: 15px 35px;
+    background: linear-gradient(to right, #2af598, #009efd);
+    color: #fff;
+    border-radius: 50px;
+    font-weight: bold;
+    box-shadow: 0 5px 15px rgba(42, 245, 152, 0.3);
+    transition: 0.3s;
+    text-decoration: none;
+    margin-top: 15px;
+}
+
+.vung-chua-anh {
+    flex: 1.2;
+    text-align: right;
+}
+
+.vung-chua-anh img {
+    max-width: 120%;
+    height: auto;
+    filter: drop-shadow(0 20px 40px rgba(0,0,0,0.15));
+    transform: translateX(10%);
+}
+
+.vung-dich-vu {
+    padding: 80px 0;
+    background-color: #ffffff;
+    text-align: center;
+}
+
+.tieu-de-vung h2 {
+    font-size: 36px;
+    margin-bottom: 10px;
+}
+
+.duong-ke-duoi {
+    width: 60px;
+    height: 4px;
+    background-color: #2af598;
+    margin: 0 auto 50px auto;
+}
+
+.danh-sach-dich-vu {
+    display: flex;
+    gap: 30px;
+    justify-content: space-between;
+}
+
+.the-dich-vu {
+    flex: 1;
+    padding: 40px 20px;
+    background-color: #f9f9f9;
+    border-radius: 15px;
+    border: 1px solid #eee;
+    transition: 0.3s;
+}
+
+.the-dich-vu:hover {
+    transform: translateY(-10px);
+    border-color: #2af598;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.05);
+}
+
+.bieu-tuong {
+    font-size: 50px;
+    margin-bottom: 25px;
+}
+
+.the-dich-vu h3 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    font-weight: 700;
+}
+
+.the-dich-vu p {
+    color: #777;
+    font-size: 17px;
+    line-height: 1.8;
+}
