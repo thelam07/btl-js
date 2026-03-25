@@ -198,3 +198,66 @@ body {
     font-size: 17px;
     line-height: 1.8;
 }
+
+.footer-tong {
+    background-color: #111;
+    color: #fff;
+    padding: 60px 0 20px 0;
+    font-family: 'Inter', sans-serif;
+}
+
+.container-footer {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.cot-footer {
+    width: 250px;
+    margin-bottom: 30px;
+}
+
+.logo-footer {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.logo-footer span {
+    color: #2af598;
+}
+
+.tieu-de-cot {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    color: #2af598;
+}
+
+.link-footer a, .info-item {
+    color: #bbb;
+    text-decoration: none;
+    margin-bottom: 10px;
+    display: block;
+    transition: 0.3s;
+}
+
+.link-footer a:hover {
+    color: #2af598;
+    padding-left: 5px;
+}
+
+.copy-right {
+    text-align: center;
+    border-top: 1px solid #333;
+    padding-top: 20px;
+    margin-top: 40px;
+    font-size: 14px;
+    color: #666;
+}
+
+.copy-right span {
+    color: #2af598;
+}
