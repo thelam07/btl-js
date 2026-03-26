@@ -1,6 +1,10 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700;900&display=swap');
 
+html {
+    scroll-behavior: smooth;
+}
+
 body {
     font-family: 'Inter', sans-serif; 
 }
@@ -365,25 +369,6 @@ body {
 }
 
 .doan-van b { color: #111; }
-
-.nut-hanh-dong {
-    display: inline-block;
-    padding: 16px 45px;
-    background: #111;
-    color: #fff;
-    font-weight: bold;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: 0.4s;
-    margin-top: 15px;
-    text-transform: uppercase;
-}
-
-.nut-hanh-dong:hover {
-    background: #2af598;
-    color: #111;
-    transform: translateY(-3px);
-}
 
 @media (max-width: 992px) {
     .about-container { flex-direction: column; gap: 50px; }
