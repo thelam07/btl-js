@@ -16,7 +16,7 @@ document.querySelector('form')
             alert('Vui lòng nhập email hợp lệ');
             return;
         }
-        fetch('http://localhost:3000/api/contact', {
+        fetch('https://btl-js-server.onrender.com/api/contact', {
             method: 'POST',
             headers: {
                 'Content-Type': 'application/json'
