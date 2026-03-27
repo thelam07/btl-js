@@ -6,6 +6,8 @@ document.querySelector('form')
         const email = document.querySelector('input[name="email-user"]').value;
         const phone = document.querySelector('input[name="phone-user"]').value;
         const message = document.querySelector('textarea[name="message-user"]').value;
+        const turnstileToken = document.querySelector('[name="cf-turnstile-response"]').value;
+
         if (!name || !email || !phone || !message) {
             alert('Vui lòng điền đầy đủ thông tin');
             return;
@@ -23,7 +25,16 @@ document.querySelector('form')
                 name,
                 email,
                 phone,
-                message
+                message,
+                turnstileToken
             })
         })
+            .then(res => res.text())
+            .then(data => {
+                alert('Gửi thành công');
+                document.querySelector('form').reset();
+            })
+            .catch(err => {
+                console.log(err);
+            })
     });
