@@ -577,6 +577,7 @@ button {
     .ban-do,
     .contact-form {
         width: 100%;
+        padding: 25px;
     }
 
     .ban-do {
