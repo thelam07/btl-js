@@ -504,7 +504,7 @@ button {
 
 .contact-tong h2 {
     text-align: center;
-    font-size: 36px;
+    font-size: 28px;
     font-weight: 800;
     color: #111;
     margin-bottom: 50px;
@@ -530,6 +530,10 @@ button {
     .noi-dung-chu {
         padding-right: 0;
         margin-bottom: 40px;
+    }
+
+    .noi-dung-chu h1 {
+        font-size: 32px;
     }
 
     .vung-chua-anh {
