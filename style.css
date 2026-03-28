@@ -519,11 +519,21 @@ button {
     padding-top: 50px;
 }
 
+.menu-hamburger {
+    display: none;
+}
+
+.danh-sach-menu a.active {
+    color: #2af598;
+    border-bottom: 2px solid #2af598;
+    padding-bottom: 5px;
+}
+
 @media (max-width: 992px) {
 
     .thanh-tieu-de .khung-chua {
-        flex-direction: column;
-        gap: 15px;
+        flex-direction: row;
+        flex-wrap: wrap;
     }
 
     .danh-sach-menu ul {
@@ -591,5 +601,20 @@ button {
 
     .social-icons {
         justify-content: center;
+    }
+
+    .menu-hamburger {
+        display: block;
+        font-size: 24px;
+    }
+
+    .danh-sach-menu {
+        display: none;
+    }
+
+    .danh-sach-menu.active {
+        display: flex;
+        flex-direction: column;
+        width: 100%
     }
 }

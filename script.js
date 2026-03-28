@@ -38,3 +38,31 @@ document.querySelector('form')
                 console.log(err);
             })
     });
+
+document.querySelector('.menu-hamburger').addEventListener('click', function () {
+    document.querySelector('.danh-sach-menu').classList.toggle('active');
+});
+
+document.querySelectorAll('.danh-sach-menu a').forEach(function (link) {
+    link.addEventListener('click', function () {
+        document.querySelector('.danh-sach-menu').classList.remove('active');
+    });
+});
+
+const sections = document.querySelectorAll('#home, #about, #services, #projects,#contact');
+const menuLinks = document.querySelectorAll('.danh-sach-menu a');
+
+window.addEventListener('scroll', function () {
+    sections.forEach(section => {
+        const sectionTop = section.offsetTop;
+        const sectionHeight = section.clientHeight;
+        if (window.scrollY >= sectionTop - sectionHeight / 2) {
+            menuLinks.forEach(link => {
+                link.classList.remove('active');
+                if (link.getAttribute('href') === '#' + section.id) {
+                    link.classList.add('active');
+                }
+            });
+        }
+    });
+});
