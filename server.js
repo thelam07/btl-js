@@ -40,7 +40,16 @@ app.post('/api/contact', async (req, res) => {
     }
 })
 
+app.post('/api/login', async (req, res) => {
+    const { username, password } = req.body;
+    const { data, error } = await supabase.from('admin').select('*').eq('username', username).eq('password', password).single();
+    if (error || !data) {
+        res.status(401).json({ success: false, message: 'Sai tài khoản hoặc mật khẩu' })
+    } else {
+        res.json({ success: true, token: data.token })
+    }
+});
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
-
