@@ -50,6 +50,23 @@ app.post('/api/login', async (req, res) => {
     }
 });
 
+app.get('/api/contacts', async (req, res) => {
+    const token = req.headers.authorization
+    const { data, error } = await supabase.from('admin').select('*').eq('token', token).single();
+    if (error || !data) {
+        console.log(error);
+        res.status(401).send('Unauthorized');
+    } else {
+        const { data: contacts, error: contactsError } = await supabase.from('contacts').select('*');
+        if (contactsError) {
+            console.log(contactsError);
+            res.status(500).send('Error');
+        } else {
+            res.send(contacts);
+        }
+    }
+});
+
 app.listen(3000, () => {
     console.log('Server is running on port 3000');
 });
